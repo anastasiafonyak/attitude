@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTITUDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+        <nav class="navbar">
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li class="has-submenu">
+                    <div class="submenu-header">
+                        <a href="programs.html">Программы и цены</a>
+                        <span class="arrow" id="submenuToggle">▼</span>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="contemporary.html">Contemporary</a></li>
+                        <li><a href="ballet.html">Ballet</a></li>
+                        <li><a href="latina-solo.html">Latina solo</a></li>
+                        <li><a href="latina-duo.html">Latina duo</a></li>
+                        <li><a href="high-heels.html">High heels</a></li>
+                        <li><a href="hip-hop.html">Hip hop</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </div>
+
+        <div class="hero-title-wrapper">
+            <h1 class="main-title">ATTITUDE</h1>
+            <p class="subtitle">студия современного танца</p>
+        </div>
+    </div>
+</header>
+
+<section class="history">
+    <div class="container history-container">
+        <h2 class="section-title history-title">THE HISTORY<br>OF THE STUDIO</h2>
+        
+        <div class="history-content">
+            <div class="history-image">
+                <img src="img/1.png" alt="Танец">
+            </div>
+            
+            <div class="history-text">
+                <p>Студия «Attitude» родилась из желания создать пространство, где каждый сможет найти свою «позу» — свой характер, свою осанку и свою любовь к танцу. Мы верим, что балет не должен быть уделом избранных. Здесь не ставят оценок за «правильные» пропорции — здесь ценят труд, артистизм и желание расти.</p>
+                <p>Приходите найти свой attitude.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="choreographers">
+    <div class="container">
+        <h2 class="section-title choreographers-title">хореографы</h2>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/2.png" alt="Хореограф 1"></div>
+            <div class="swiper-slide"><img src="img/3.png" alt="Хореограф 2"></div>
+            <div class="swiper-slide"><img src="img/4.png" alt="Хореограф 3"></div>
+            <div class="swiper-slide"><img src="img/5.png" alt="Хореограф 4"></div>
+            <div class="swiper-slide"><img src="img/6.png" alt="Хореограф 5"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">ATTITUDE</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/imask"></script> 
+<script src="programs.js"></script>
+</body>
+</html>
