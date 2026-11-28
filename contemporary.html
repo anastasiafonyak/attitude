@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contemporary - ATTITUDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Montserrat:wght@300;400;500;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/direction.css">
+</head>
+<body>
+
+<header class="page-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo-link">ATTITUDE</a>
+        <div class="header-title">направления</div>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li class="has-submenu">
+            <div class="submenu-header">
+                <a href="programs.html">Программы и цены</a>
+                <span class="arrow" id="submenuToggle">▼</span>
+            </div>
+            <ul class="submenu">
+                <li><a href="contemporary.html">Contemporary</a></li>
+                <li><a href="ballet.html">Ballet</a></li>
+                <li><a href="latina-solo.html">Latina solo</a></li>
+                <li><a href="latina-duo.html">Latina duo</a></li>
+                <li><a href="high-heels.html">High heels</a></li>
+                <li><a href="hip-hop.html">Hip hop</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">О нас</a></li>
+    </ul>
+</div>
+
+<main class="direction-page">
+    <div class="container">
+        <h1 class="direction-title">CONTEMPORARY</h1>
+        
+        <div class="direction-top">
+            <div class="direction-image top-image">
+                <img src="img/контемп 1.png" alt="Contemporary">
+            </div>
+            <div class="direction-description">
+                <p>Contemporary — современный танец, объединивший техники классического балета, модерна и джаза, но отвергающий жёсткие каноны.</p>
+                <p>Танец возник в XX веке как протест против академической строгости: Марта Грэм отказалась от пуантов и «идеальных» форм, Пина Бауш соединила танец с театром, а Мерс Каннингем ввёл принцип случайности.</p>
+                <p>Сегодня это язык, на котором тело говорит свободно — через дыхание, импульс и силу тяжести, а не через заученные позиции.</p>
+            </div>
+        </div>
+
+        <div class="direction-bottom">
+            <div class="direction-features">
+                <p class="features-title">Особенность направления:</p>
+                <p>Свобода движения: тело работает с силой тяжести, дыханием и импульсом, а не с жёсткими позициями</p>
+                <p>Акцент на самовыражении, а не на техническом совершенстве: важно не «как», а «что» вы говорите движением</p>
+                <p>Развивает гибкость, координацию и осознанность тела</p>
+                <p>Подходит любому возрасту и уровню подготовки: не требует идеальных данных, только желание двигаться и исследовать</p>
+            </div>
+            <div class="direction-image bottom-image">
+                <img src="img/контемп 2.png" alt="Contemporary">
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <div class="cta-text">первое занятие —<br><span>БЕСПЛАТНО</span></div>
+            <button class="cta-button" id="openModalBtn">записаться</button>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">ATTITUDE</div>
+    </div>
+</footer>
+
+<div class="modal" id="applyModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModalBtn">&times;</span>
+        <h3>Запись на занятие</h3>
+        <form id="applyForm">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+            <input type="date" id="date" required>
+            <select id="programSelect" required>
+                <option value="" disabled selected>Выберите направление</option>
+                <option value="Contemporary" selected>Contemporary</option>
+                <option value="Ballet">Ballet</option>
+                <option value="Latina Solo">Latina Solo</option>
+                <option value="Latina Duo">Latina Duo</option>
+                <option value="High Heels">High Heels</option>
+                <option value="Hip Hop">Hip Hop</option>
+            </select>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/imask"></script> 
+<script src="js/script.js"></script>
+<script src="js/direction.js"></script>
+</body>
+</html>

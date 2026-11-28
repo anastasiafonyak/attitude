@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latina Solo - ATTITUDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Montserrat:wght@300;400;500;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/direction.css">
+</head>
+<body>
+
+<header class="page-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo-link">ATTITUDE</a>
+        <div class="header-title">направления</div>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li class="has-submenu">
+            <div class="submenu-header">
+                <a href="programs.html">Программы и цены</a>
+                <span class="arrow" id="submenuToggle">▼</span>
+            </div>
+            <ul class="submenu">
+                <li><a href="contemporary.html">Contemporary</a></li>
+                <li><a href="ballet.html">Ballet</a></li>
+                <li><a href="latina-solo.html">Latina solo</a></li>
+                <li><a href="latina-duo.html">Latina duo</a></li>
+                <li><a href="high-heels.html">High heels</a></li>
+                <li><a href="hip-hop.html">Hip hop</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">О нас</a></li>
+    </ul>
+</div>
+
+<main class="direction-page">
+    <div class="container">
+        <h1 class="direction-title">LATINA SOLO</h1>
+        
+        <div class="direction-top">
+            <div class="direction-image top-image">
+                <img src="img/соло 1.png" alt="Latina Solo">
+            </div>
+            <div class="direction-description">
+                <p>Latina solo — это сольное исполнение латиноамериканской программы, где танцор выступает без партнёра. Направление выделилось в самостоятельную дисциплину относительно недавно, но быстро набрало популярность: оно позволяет раскрыть характер и технику каждого танцора без оглядки на партнёра.</p>
+                <p>Изначально эти ритмы были социальными и парными, но в сольном формате они превратились в мощный инструмент самовыражения. Сегодня латина соло — это язык, на котором тело говорит через музыку, страсть и характер, а не через взаимодействие с партнёром.</p>
+            </div>
+        </div>
+
+        <div class="direction-bottom">
+            <div class="direction-features">
+                <p class="features-title">Особенность направления:</p>
+                <p>Танец строится на взаимодействии с музыкой и зрителем, а не на партнёре</p>
+                <p>Акцент на артистизме и музыкальности.</p>
+                <p>Тело учится работать на высоком темпе с резкой сменой акцентов — этого не даст ни одна монотонная техника</p>
+                <p>Не требует партнёра или идеальных пропорций, только желание двигаться, чувствовать музыку и раскрывать свой характер</p>
+            </div>
+            <div class="direction-image bottom-image">
+                <img src="img/соло 2.png" alt="Latina Solo">
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <div class="cta-text">первое занятие —<br><span>БЕСПЛАТНО</span></div>
+            <button class="cta-button" id="openModalBtn">записаться</button>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">ATTITUDE</div>
+    </div>
+</footer>
+
+<div class="modal" id="applyModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModalBtn">&times;</span>
+        <h3>Запись на занятие</h3>
+        <form id="applyForm">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+            <input type="date" id="date" required>
+            <select id="programSelect" required>
+                <option value="" disabled selected>Выберите направление</option>
+                <option value="Contemporary">Contemporary</option>
+                <option value="Ballet">Ballet</option>
+                <option value="Latina Solo" selected>Latina Solo</option>
+                <option value="Latina Duo">Latina Duo</option>
+                <option value="High Heels">High Heels</option>
+                <option value="Hip Hop">Hip Hop</option>
+            </select>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/imask"></script> 
+<script src="js/script.js"></script>
+<script src="js/direction.js"></script>
+</body>
+</html>
